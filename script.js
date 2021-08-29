@@ -1,0 +1,30 @@
+
+$(document).ready(function(){
+    $("#search-bar").click(function(){
+        $("#searchtext").toggle();
+        $("input[type='text']").focus();
+    });
+    $(".hamburger").click(function(){
+        $(".center").toggle();
+        $(".link").toggle();
+    })
+
+    $('.owl-carousel').owlCarousel({
+        stagePadding:5,
+        loop:true,
+        margin:5,
+        nav:true,
+        dots:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+        })
+});    
